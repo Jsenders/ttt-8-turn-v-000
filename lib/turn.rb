@@ -38,10 +38,4 @@ def turn(board)
   puts "Please enter 1-9:"
   board = gets.strip
   input_to_index(board)
-valid_move?(board, index)
-    if position_taken?(board, index)
-      return false
-    elsif index.to_i.between?(0, 8)
-      return true
-    end
 end
